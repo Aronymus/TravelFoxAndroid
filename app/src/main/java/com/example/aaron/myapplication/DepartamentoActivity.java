@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DepartamentoActivity extends AppCompatActivity {
 
-    ListView lvciu;
+    ListView lvdep;
     List<Departamentos> lista;
     DepartamentoDAO cdao;
     DepartamentoAdaptador adap;
@@ -26,11 +26,11 @@ public class DepartamentoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_departamento);
 
-        lvciu = findViewById(R.id.lv1);
+        lvdep = findViewById(R.id.lv1);
 
         TraerCiudades();
 
-        lvciu.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        lvdep.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 MandarEnvio(position);
@@ -41,13 +41,12 @@ public class DepartamentoActivity extends AppCompatActivity {
 
     void MandarEnvio(int posicion) {
         final int pos=posicion;
-        Departamentos ciu = lista.get(pos);
+        Departamentos dep = lista.get(pos);
         Intent i=new Intent(getApplicationContext(),
                 DepartamentoActivity.class);
-        i.putExtra("img", ciu.getIMGCIU()+"");
-        i.putExtra("title",ciu.getNOMCIU());
-        i.putExtra("descripcion", ciu.getDESCRIP());
-        i.putExtra("platos",ciu.getPLATOS());
+        i.putExtra("img", dep.getIMGDEP()+"");
+        i.putExtra("title",dep.getNOMDEP());
+        i.putExtra("descripcion", dep.getDESCRIP());
 
         startActivity(i);
     }
@@ -61,6 +60,6 @@ public class DepartamentoActivity extends AppCompatActivity {
                 R.layout.item_departamentos,
                 lista);
 
-        lvciu.setAdapter(adap);
+        lvdep.setAdapter(adap);
     }
 }

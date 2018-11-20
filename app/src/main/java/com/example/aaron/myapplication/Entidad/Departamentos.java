@@ -2,26 +2,25 @@ package com.example.aaron.myapplication.Entidad;
 
 public class Departamentos {
 
-    int CODCIU;
-    String NOMCIU;
+    int CODDEP;
+    String NOMDEP;
     String DESCRIP;
-    String PLATOS;
-    int IMGCIU;
+    int IMGDEP;
 
-    public int getCODCIU() {
-        return CODCIU;
+    public int getCODDEP() {
+        return CODDEP;
     }
 
-    public void setCODCIU(int CODCIU) {
-        this.CODCIU = CODCIU;
+    public void setCODDEP(int CODDEP) {
+        this.CODDEP = CODDEP;
     }
 
-    public String getNOMCIU() {
-        return NOMCIU;
+    public String getNOMDEP() {
+        return NOMDEP;
     }
 
-    public void setNOMCIU(String NOMCIU) {
-        this.NOMCIU = NOMCIU;
+    public void setNOMDEP(String NOMDEP) {
+        this.NOMDEP = NOMDEP;
     }
 
     public String getDESCRIP() {
@@ -32,27 +31,20 @@ public class Departamentos {
         this.DESCRIP = DESCRIP;
     }
 
-    public String getPLATOS() {
-        return PLATOS;
+    public int getIMGDEP() {
+        return IMGDEP;
     }
 
-    public void setPLATOS(String PLATOS) {
-        this.PLATOS = PLATOS;
+    public void setIMGDEP(int IMGDEP) {
+        this.IMGDEP = IMGDEP;
     }
 
-    public int getIMGCIU() {
-        return IMGCIU;
-    }
-
-    public void setIMGCIU(int IMGCIU) {
-        this.IMGCIU = IMGCIU;
-    }
-
-    public Departamentos(int CODCIU, String NOMCIU, String DESCRIP, String PLATOS, int IMGCIU) {
-        this.CODCIU = CODCIU;
-        this.NOMCIU = NOMCIU;
+    public Departamentos(int CODDEP, String NOMDEP, String DESCRIP, int IMGDEP) {
+        this.CODDEP = CODDEP;
+        this.NOMDEP = NOMDEP;
         this.DESCRIP = DESCRIP;
-        this.PLATOS = PLATOS;
-        this.IMGCIU = IMGCIU;
+        this.IMGDEP = IMGDEP;
     }
+
+    public Departamentos() {}
 }

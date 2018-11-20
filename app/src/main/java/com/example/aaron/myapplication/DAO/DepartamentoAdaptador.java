@@ -41,15 +41,15 @@ public class DepartamentoAdaptador extends ArrayAdapter<Departamentos> {
 
         Departamentos c=milista.get(position);
 
-        ImageView img = mivista.findViewById(R.id.IMGCIU);
+        ImageView img = mivista.findViewById(R.id.IMGDEP);
         TextView tvtitle, tvdescripcion;
         tvtitle = mivista.findViewById(R.id.TVTITULO);
         tvdescripcion = mivista.findViewById(R.id.TVDESCRIP);
 
-        tvtitle.setText(c.getNOMCIU());
+        tvtitle.setText(c.getNOMDEP());
         tvdescripcion.setText(c.getDESCRIP());
 
-        img.setImageResource(getImagen(c.getIMGCIU()));
+        img.setImageResource(getImagen(c.getIMGDEP()));
 
         return mivista;
     }
@@ -58,7 +58,7 @@ public class DepartamentoAdaptador extends ArrayAdapter<Departamentos> {
     {
         String recurso="drawable";
         String paquete=micontexto.getPackageName();
-        String nombre="c"+codigo;
+        String nombre="paisaje"+codigo;
 
         int devolver =
                 micontexto.getResources().getIdentifier(nombre,recurso,paquete);
