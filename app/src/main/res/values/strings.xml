@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Departamentos</string>
+    <string name="reservas">Reservas</string>
+    <string name="destinos">Destinos</string>
+    <string name="conductores">Conductores</string>
+    <string name="contactos">Contactos</string>
+    <string name="inicio">Inicio</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>

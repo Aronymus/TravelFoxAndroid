@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/db" android:title="@string/reservas" android:icon="@drawable/reserva"></item>
+    <item android:id="@+id/cond" android:title="@string/conductores" android:icon="@drawable/conductores"></item>
+    <item android:id="@+id/cont" android:title="@string/contactos" android:icon="@drawable/contacto"></item>
+    <item android:id="@+id/des" android:icon="@drawable/destinos" android:title="@string/destinos"></item>
+    <item android:id="@+id/ini" android:title="@string/inicio" android:icon="@drawable/inicio"></item>
+</menu>
